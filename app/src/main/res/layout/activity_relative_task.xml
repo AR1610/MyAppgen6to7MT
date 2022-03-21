@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeTaskActivity">
+
+    <TextView
+        android:id="@+id/tv_wlcm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Welcome Back"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_wlcm"
+        android:layout_marginLeft="20dp"
+        android:text="Login back into your account"
+        android:textSize="20sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ac"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/inner_bg"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg_task"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="20dp"
+            android:drawableTint="#fff"
+            android:hint="Email"
+            android:textColor="#fff"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="#fff" >
+        <requestFocus/>
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg_task"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="20dp"
+            android:drawableTint="#fff"
+            android:hint="Password"
+            android:textColor="#fff"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+
+
+        <TextView
+            android:id="@+id/tv_fp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_password"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="forgot password?"
+            android:textColor="#fff" />
+
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_fp"
+            android:layout_margin="40dp"
+            android:background="@drawable/edt_bg"
+            android:text="Login"
+            android:textColor="#3CAA40" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img_dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/relative"
+        android:layout_below="@+id/tv_ac"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-100dp"
+        android:background="@drawable/dp_bg"
+        android:paddingHorizontal="5dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="2dp"
+        android:src="@drawable/customer" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relative">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_account"
+            android:text="Don't have an account yet? "
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_join"
+            android:text="Join now"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/tv_account"
+            android:textColor="#06B80D"
+            android:layout_marginTop="20dp"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
