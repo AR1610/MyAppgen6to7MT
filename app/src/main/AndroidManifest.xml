@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppgen6to7MT">
         <activity
+            android:name=".RelativeTaskActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".RelativeTaskActivity"
+            android:name=".LinearActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
