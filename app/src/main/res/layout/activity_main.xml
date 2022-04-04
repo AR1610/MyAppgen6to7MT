@@ -4,6 +4,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg">
 
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
     <TextView
         android:id="@+id/tv_login"
         android:layout_width="wrap_content"
@@ -12,6 +16,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="serif"
         android:text="Login"
+        android:layout_below="@+id/toolbar"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold|italic" />
