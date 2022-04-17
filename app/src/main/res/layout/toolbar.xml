@@ -8,4 +8,6 @@
     app:title="MyApp 6to7"
     app:titleTextColor="#fff">
 
+
+
 </androidx.appcompat.widget.Toolbar>
