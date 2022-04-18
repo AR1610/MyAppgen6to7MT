@@ -13,10 +13,10 @@
             android:name=".RelativeTaskActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LinearActivity"
             android:exported="true" />
         <activity
-            android:name=".LinearActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

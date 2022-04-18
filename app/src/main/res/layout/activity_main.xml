@@ -4,10 +4,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
-
-
     <TextView
         android:id="@+id/tv_login"
         android:layout_width="wrap_content"
@@ -16,7 +12,6 @@
         android:layout_marginTop="40dp"
         android:fontFamily="serif"
         android:text="Login"
-        android:layout_below="@+id/toolbar"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold|italic" />
@@ -29,9 +24,9 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/edt_bg"
-        android:hint="Username"
         android:drawableLeft="@drawable/ic_person"
         android:drawablePadding="10dp"
+        android:hint="Username"
         android:imeOptions="actionNext"
         android:inputType="textEmailAddress"
         android:padding="15dp"
@@ -46,8 +41,8 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="20dp"
         android:background="@null"
-        android:hint="Password"
         android:drawableRight="@drawable/ic_lock"
+        android:hint="Password"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:padding="15dp"
