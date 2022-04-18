@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText edtUserName;
     Button btnLogin;
+    TextView tvUsername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         edtUserName = findViewById(R.id.edt_username);
         btnLogin = findViewById(R.id.btn_login);
+        tvUsername = findViewById(R.id.tv_login);
 
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String strUserName = edtUserName.getText().toString();
+                tvUsername.setText(strUserName);
                 Toast.makeText(MainActivity.this, "UserName is " + strUserName, Toast.LENGTH_SHORT).show();
             }
         });

@@ -4,14 +4,24 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg">
 
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/customer"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_logo"
+        android:layout_marginTop="30dp"/>
+
     <TextView
         android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="serif"
         android:text="Login"
+        android:layout_below="@+id/img_logo"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold|italic" />
