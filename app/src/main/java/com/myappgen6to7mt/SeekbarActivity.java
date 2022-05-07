@@ -3,13 +3,15 @@ package com.myappgen6to7mt;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.RatingBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class SeekbarActivity extends AppCompatActivity {
 
     private SeekBar seekbar;
-    private TextView tvSeekbar;
+    RatingBar ratingBar;
+    private TextView tvSeekbar,tvRatingbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +19,15 @@ public class SeekbarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_seekbar);
         seekbar = (SeekBar)findViewById(R.id.seekbar);
         tvSeekbar = (TextView)findViewById(R.id.tv_seekbar);
+        ratingBar = findViewById(R.id.ratingbar);
+        tvRatingbar = findViewById(R.id.tv_ratingbar);
 
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                tvRatingbar.setText(String.valueOf(rating));
+            }
+        });
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
