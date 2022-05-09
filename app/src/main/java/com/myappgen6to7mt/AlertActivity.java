@@ -5,19 +5,47 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class AlertActivity extends AppCompatActivity {
 
-    Button btnAlert;
+    Button btnAlert,btnCustomAlert;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
 
         btnAlert = findViewById(R.id.btn_alert);
+        btnCustomAlert = findViewById(R.id.btn_ctm_alert);
+
+        btnCustomAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LayoutInflater layoutInflater = getLayoutInflater();
+                View myview = layoutInflater.inflate(R.layout.raw_custom_dialog,null);
+                AlertDialog.Builder builder = new AlertDialog.Builder(AlertActivity.this);
+                AlertDialog alertDialog = builder.create();
+                alertDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+                alertDialog.setView(myview);
+                Button btnCancel = myview.findViewById(R.id.btn_cancel);
+                btnCancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        if (alertDialog.isShowing()){
+                            alertDialog.dismiss();
+                        }
+                    }
+                });
+                alertDialog.show();
+            }
+        });
+
+
         btnAlert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
