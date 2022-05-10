@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class AlertActivity extends AppCompatActivity {
 
-    Button btnAlert,btnCustomAlert;
+    Button btnAlert,btnCustomAlert,btnCustomToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,22 @@ public class AlertActivity extends AppCompatActivity {
 
         btnAlert = findViewById(R.id.btn_alert);
         btnCustomAlert = findViewById(R.id.btn_ctm_alert);
+        btnCustomToast = findViewById(R.id.btn_ctm_toast);
+
+        btnCustomToast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LayoutInflater layoutInflater  = getLayoutInflater();
+                View myToast = layoutInflater.inflate(R.layout.raw_toast,null);
+                Toast toast =  new Toast(AlertActivity.this);
+                toast.setView(myToast);
+                toast.setDuration(Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
+
+
 
         btnCustomAlert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +51,6 @@ public class AlertActivity extends AppCompatActivity {
                 btnCancel.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
                         if (alertDialog.isShowing()){
                             alertDialog.dismiss();
                         }
@@ -44,7 +59,6 @@ public class AlertActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
-
 
         btnAlert.setOnClickListener(new View.OnClickListener() {
             @Override
