@@ -8,11 +8,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AlertActivity extends AppCompatActivity {
 
-    Button btnAlert,btnCustomAlert,btnCustomToast;
+    Button btnAlert, btnCustomAlert, btnCustomToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,33 +28,51 @@ public class AlertActivity extends AppCompatActivity {
         btnCustomToast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LayoutInflater layoutInflater  = getLayoutInflater();
-                View myToast = layoutInflater.inflate(R.layout.raw_toast,null);
-                Toast toast =  new Toast(AlertActivity.this);
+                LayoutInflater layoutInflater = getLayoutInflater();
+                View myToast = layoutInflater.inflate(R.layout.raw_toast, null);
+                Toast toast = new Toast(AlertActivity.this);
                 toast.setView(myToast);
                 toast.setDuration(Toast.LENGTH_SHORT);
                 toast.show();
             }
         });
 
-
-
-
         btnCustomAlert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 LayoutInflater layoutInflater = getLayoutInflater();
-                View myview = layoutInflater.inflate(R.layout.raw_custom_dialog,null);
+                View myview = layoutInflater.inflate(R.layout.raw_custom_dialog, null);
                 AlertDialog.Builder builder = new AlertDialog.Builder(AlertActivity.this);
                 AlertDialog alertDialog = builder.create();
                 alertDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
                 alertDialog.setView(myview);
                 Button btnCancel = myview.findViewById(R.id.btn_cancel);
+                Button btnSearch = myview.findViewById(R.id.btn_search);
+                EditText edtUsername = myview.findViewById(R.id.edt_email);
+                btnSearch.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        if (alertDialog.isShowing()){
+                            alertDialog.dismiss();
+                        }
+
+                        String strEmail = edtUsername.getText().toString();
+                        View myToast = layoutInflater.inflate(R.layout.raw_toast, null);
+                        Toast toast = new Toast(AlertActivity.this);
+                        TextView tvData = myToast.findViewById(R.id.tv_data);
+                        tvData.setText(strEmail);
+                        toast.setView(myToast);
+                        toast.setDuration(Toast.LENGTH_SHORT);
+                        toast.show();
+
+                    }
+                });
                 btnCancel.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (alertDialog.isShowing()){
+                        if (alertDialog.isShowing()) {
                             alertDialog.dismiss();
                         }
                     }
