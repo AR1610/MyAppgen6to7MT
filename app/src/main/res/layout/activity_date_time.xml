@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DateTimeActivity"
     android:orientation="vertical"
-    android:padding="30dp">
+    android:padding="30dp"
+    tools:context=".DateTimeActivity">
     <!--
     <DatePicker
         android:layout_width="match_parent"
@@ -14,21 +14,35 @@
         android:id="@+id/date"/>-->
 
     <TextView
+        android:id="@+id/tv_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_date"
         android:background="@android:drawable/editbox_background_normal"
-        android:padding="15dp"/>
-
+        android:padding="15dp" />
 
     <Button
+        android:id="@+id/btn_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_date"
-        android:text="Date"
         android:layout_gravity="center"
-        android:textColor="#fff"
-        android:layout_margin="30dp"/>
+        android:layout_margin="30dp"
+        android:text="Date"
+        android:textColor="#fff" />
 
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Time"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff" />
 
 </LinearLayout>

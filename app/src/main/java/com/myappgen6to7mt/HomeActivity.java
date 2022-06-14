@@ -18,7 +18,8 @@ public class HomeActivity extends AppCompatActivity {
 
         Intent i = getIntent();
         String strUsername = i.getStringExtra("KEY_USERNAME");
-        tvUsername.setText("Welcome " + strUsername);
+        String strRadio = i.getStringExtra("KEY_Gender");
+        tvUsername.setText("Welcome " + strUsername +"Gender "+strRadio);
 
 
     }

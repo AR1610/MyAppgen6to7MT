@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_fn"
+        android:hint="First Name"
+        android:background="@android:drawable/editbox_background"
+        android:padding="14dp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:elevation="10dp"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_ln"
+        android:hint="Last Name"
+        android:background="@android:drawable/editbox_background"
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:elevation="10dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_email"
+        android:hint="Email"
+        android:background="@android:drawable/editbox_background"
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:elevation="10dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_password"
+        android:hint="Password"
+        android:background="@android:drawable/editbox_background"
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:elevation="10dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_contact"
+        android:hint="Contact No"
+        android:background="@android:drawable/editbox_background"
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:elevation="10dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_signUp"
+        android:layout_marginTop="40dp"
+        android:text="sign Up"
+        android:textColor="#fff"
+        android:padding="10dp"/>
+
+
+</LinearLayout>

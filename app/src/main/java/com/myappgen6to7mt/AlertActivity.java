@@ -53,11 +53,10 @@ public class AlertActivity extends AppCompatActivity {
                 btnSearch.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+                        
                         if (alertDialog.isShowing()){
                             alertDialog.dismiss();
                         }
-
                         String strEmail = edtUsername.getText().toString();
                         View myToast = layoutInflater.inflate(R.layout.raw_toast, null);
                         Toast toast = new Toast(AlertActivity.this);
@@ -66,7 +65,6 @@ public class AlertActivity extends AppCompatActivity {
                         toast.setView(myToast);
                         toast.setDuration(Toast.LENGTH_SHORT);
                         toast.show();
-
                     }
                 });
                 btnCancel.setOnClickListener(new View.OnClickListener() {

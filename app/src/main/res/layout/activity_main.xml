@@ -66,10 +66,37 @@
         android:layout_marginHorizontal="30dp"
         android:layout_below="@+id/edt_password"/>
 
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edt_password"
+        android:id="@+id/radiogrp"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_male"
+            android:text="Male"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_female"
+            android:text="Female"/>
+
+
+    </RadioGroup>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_password"
+        android:layout_below="@+id/radiogrp"
         android:orientation="horizontal"
         android:layout_marginTop="40dp"
         android:layout_marginHorizontal="20dp">
