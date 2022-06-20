@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppgen6to7MT">
         <activity
+            android:name=".SimpleListviewActivity"
+            android:exported="true" />
+        <activity
             android:name=".SpinnerActivity"
             android:exported="true" />
         <activity

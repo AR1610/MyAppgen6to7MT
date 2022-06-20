@@ -17,8 +17,6 @@ public class SpinnerActivity extends AppCompatActivity {
 
     Spinner spinner;
     TextView tvSpinner;
-
-
    String strLang[] = {"Select item","Android","java",".net","PHP","Flutter","IOS","Python"};
 
     @Override
