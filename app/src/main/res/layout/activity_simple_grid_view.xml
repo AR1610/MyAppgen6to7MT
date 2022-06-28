@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SimpleListviewActivity"
-    android:orientation="vertical">
+    tools:context=".SimpleGridViewActivity"
+    android:orientation="vertical"
+    android:background="#000"
+    android:padding="10dp">
 
-    <ListView
+    <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/list_view"
-        android:divider="@color/purple_500"
-        android:dividerHeight="2dp"/>
+        android:id="@+id/grid_view"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"/>
+
 
 </LinearLayout>

@@ -2,7 +2,10 @@ package com.myappgen6to7mt;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -19,8 +22,15 @@ public class SimpleListviewActivity extends AppCompatActivity {
         ArrayAdapter<String> arrayAdapter = new
                 ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,strData);
         listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-
-
+               String strData = parent.getItemAtPosition(position).toString();
+                Intent i = new Intent(SimpleListviewActivity.this,HomeActivity.class);
+                i.putExtra("KEY_DATA",strData);
+                startActivity(i);
+            }
+        });
     }
 }

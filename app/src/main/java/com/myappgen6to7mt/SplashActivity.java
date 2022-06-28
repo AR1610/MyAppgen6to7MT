@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent  i = new Intent(SplashActivity.this,SimpleListviewActivity.class);
+                Intent  i = new Intent(SplashActivity.this,SimpleGridViewActivity.class);
                 startActivity(i);
                 finish();
             }
