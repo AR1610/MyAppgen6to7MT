@@ -116,4 +116,30 @@ public class AlertActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(AlertActivity.this);
+        builder.setIcon(R.drawable.customer);
+        builder.setTitle("Alert Dialog");
+        builder.setMessage("Are you sure, you want to Exit?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+              finish();
+            }
+        });
+
+        builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            dialog.dismiss();
+            }
+        });
+        builder.show();
+    }
 }
