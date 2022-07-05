@@ -23,5 +23,6 @@ public class SimpleGridViewActivity extends AppCompatActivity {
                 ArrayAdapter<String>(this, R.layout.raw_grid,R.id.tv_data,strLang);
         gridView.setAdapter(arrayAdapter);
 
+
     }
 }

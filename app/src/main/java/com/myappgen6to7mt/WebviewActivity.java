@@ -8,7 +8,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class WebviewActivity extends AppCompatActivity {
-
     WebView webView;
 
     @Override
@@ -23,18 +22,15 @@ public class WebviewActivity extends AppCompatActivity {
     }
 
     private class MyWebview extends WebViewClient {
-
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String request) {
             view.loadUrl(request);
             return true;
         }
     }
-
     @Override
     public void onBackPressed() {
        // super.onBackPressed();
-
         if (webView.canGoBack()){
             webView.goBack();
         }else {
