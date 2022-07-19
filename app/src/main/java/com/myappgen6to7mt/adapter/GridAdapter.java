@@ -1,14 +1,15 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.myappgen6to7mt.R;
+import com.myappgen6to7mt.model.LangModel;
 
 import java.util.ArrayList;
 
@@ -20,7 +21,6 @@ public class GridAdapter extends BaseAdapter {
     public GridAdapter(Context context, ArrayList<LangModel> langModelArrayList) {
         this.context = context;
         this.langModelArrayList = langModelArrayList;
-
     }
 
     @Override

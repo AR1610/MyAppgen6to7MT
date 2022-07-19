@@ -1,4 +1,4 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.RatingBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.myappgen6to7mt.R;
 
 public class SeekbarActivity extends AppCompatActivity {
 

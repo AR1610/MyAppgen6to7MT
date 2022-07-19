@@ -1,4 +1,4 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.myappgen6to7mt.R;
 
 public class SignUpActivity extends AppCompatActivity {
 

@@ -1,9 +1,13 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ListView;
+
+import com.myappgen6to7mt.model.LangModel;
+import com.myappgen6to7mt.adapter.MyBaseAdapter;
+import com.myappgen6to7mt.R;
 
 import java.util.ArrayList;
 

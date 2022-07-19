@@ -1,4 +1,4 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.model;
 
 public class LangModel {
     String strLang;

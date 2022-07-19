@@ -1,8 +1,10 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.myappgen6to7mt.R;
 
 public class RelativeTaskActivity extends AppCompatActivity {
 

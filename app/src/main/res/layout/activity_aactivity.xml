@@ -4,19 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.SplashActivity"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context=".activity.AActivity">
 
-
-    <com.myappgen6to7mt.utils.GifImageView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/img_gif"/>
-    <!--
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/customer"/>
--->
+        android:id="@+id/btn_next"
+        android:text="Next"/>
+
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
+
+import com.myappgen6to7mt.R;
 
 import java.util.Calendar;
 

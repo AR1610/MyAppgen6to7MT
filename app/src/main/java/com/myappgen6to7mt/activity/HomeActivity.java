@@ -1,10 +1,12 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.myappgen6to7mt.R;
 
 public class HomeActivity extends AppCompatActivity {
 

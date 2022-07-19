@@ -1,4 +1,4 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.utils;
 
 import android.content.Context;
 import android.graphics.Canvas;

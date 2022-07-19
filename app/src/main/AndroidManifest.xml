@@ -15,52 +15,58 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppgen6to7MT">
         <activity
-            android:name=".CustomGridViewActivity"
+            android:name=".activity.AActivity"
             android:exported="false" />
         <activity
-            android:name=".CustomListViewActivity"
+            android:name=".activity.BActivity"
             android:exported="false" />
         <activity
-            android:name=".WebviewActivity"
+            android:name=".activity.CustomGridViewActivity"
             android:exported="false" />
         <activity
-            android:name=".SimpleGridViewActivity"
+            android:name=".activity.CustomListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WebviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SimpleGridViewActivity"
             android:exported="true" />
         <activity
-            android:name=".SimpleListviewActivity"
+            android:name=".activity.SimpleListviewActivity"
             android:exported="true" />
         <activity
-            android:name=".SpinnerActivity"
+            android:name=".activity.SpinnerActivity"
             android:exported="true" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activity.SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".DateTimeActivity"
+            android:name=".activity.DateTimeActivity"
             android:exported="true" />
         <activity
-            android:name=".AlertActivity"
+            android:name=".activity.AlertActivity"
             android:exported="true" />
         <activity
-            android:name=".SeekbarActivity"
+            android:name=".activity.SeekbarActivity"
             android:exported="true" />
         <activity
-            android:name=".ImagePickActivity"
+            android:name=".activity.ImagePickActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activity.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".RelativeTaskActivity"
+            android:name=".activity.RelativeTaskActivity"
             android:exported="true" />
         <activity
-            android:name=".LinearActivity"
+            android:name=".activity.LinearActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,10 +1,13 @@
-package com.myappgen6to7mt;
+package com.myappgen6to7mt.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.myappgen6to7mt.utils.GifImageView;
+import com.myappgen6to7mt.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -19,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent  i = new Intent(SplashActivity.this,CustomGridViewActivity.class);
+                Intent  i = new Intent(SplashActivity.this,AActivity.class);
                 startActivity(i);
                 finish();
             }
