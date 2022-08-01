@@ -12,21 +12,22 @@ import com.myappgen6to7mt.R;
 public class SplashActivity extends AppCompatActivity {
 
     int time = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
+        getSupportActionBar().hide();
         GifImageView gifImageView = findViewById(R.id.img_gif);
         gifImageView.setGifImageResource(R.drawable.android);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent  i = new Intent(SplashActivity.this,FragmentLoadActivity.class);
+                Intent i = new Intent(SplashActivity.this, TypeofMenuActivity.class);
                 startActivity(i);
                 finish();
             }
-        },time);
+        }, time);
 
     }
 }

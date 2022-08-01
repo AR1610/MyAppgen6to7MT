@@ -11,36 +11,59 @@ import com.myappgen6to7mt.R;
 import com.myappgen6to7mt.fragments.AFragment;
 import com.myappgen6to7mt.fragments.BFragment;
 
-public class FragmentLoadActivity extends AppCompatActivity {
+public class Task2Activity extends AppCompatActivity {
 
-    Button btnA,btnB;
+    Button btnChat,btnStatus,btnCall;
+    View vChat,vSatus,vCall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment_load);
-        btnA = findViewById(R.id.btn_a);
-        btnB = findViewById(R.id.btn_b);
+        setContentView(R.layout.activity_task2);
 
-        btnA.setOnClickListener(new View.OnClickListener() {
+        btnChat = findViewById(R.id.btn_chat);
+        btnStatus = findViewById(R.id.btn_status);
+        btnCall = findViewById(R.id.btn_call);
+
+        vChat = findViewById(R.id.v_chat);
+        vSatus = findViewById(R.id.v_status);
+        vCall = findViewById(R.id.v_call);
+
+
+        btnChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 AFragment aFragment = new AFragment();
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.add(R.id.frame,aFragment);
                 fragmentTransaction.commit();
+
+                vChat.setVisibility(View.VISIBLE);
+                vSatus.setVisibility(View.INVISIBLE);
+                vCall.setVisibility(View.INVISIBLE);
+
             }
         });
 
-        btnB.setOnClickListener(new View.OnClickListener() {
+
+
+        btnStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 BFragment bFragment = new BFragment();
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.add(R.id.frame,bFragment);
                 fragmentTransaction.commit();
+
+                vChat.setVisibility(View.INVISIBLE);
+                vSatus.setVisibility(View.VISIBLE);
+                vCall.setVisibility(View.INVISIBLE);
+
             }
         });
+
 
     }
 }
