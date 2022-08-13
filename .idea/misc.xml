@@ -14,6 +14,7 @@
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_aactivity.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_alert.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_bactivity.xml" value="0.1417763157894737" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_bottom_nav.xml" value="0.12442396313364056" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_custom_grid_view.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_custom_list_view.xml" value="0.1401315789473684" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_date_time.xml" value="0.1411184210526316" />
@@ -33,6 +34,7 @@
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_task2.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_typeof_menu.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_webview.xml" value="0.1" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_whats_app.xml" value="0.12467105263157895" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/fragment_a.xml" value="0.15" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/fragment_b.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/fragment_c.xml" value="0.1417763157894737" />
@@ -44,6 +46,7 @@
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/raw_grid.xml" value="0.12105263157894737" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/raw_toast.xml" value="0.14276315789473684" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/toolbar.xml" value="0.16052631578947368" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/menu/bottom_nav.xml" value="0.1" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/menu/item_menu.xml" value="0.15" />
       </map>
     </option>
