@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.BottomNavActivity">
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#D89595"
         app:title="MyApp"
-        app:titleTextColor="#fff"/>
+        android:id="@+id/toolbar"
+        app:titleTextColor="#fff" />
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

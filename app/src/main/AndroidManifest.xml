@@ -15,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppgen6to7MT">
         <activity
+            android:name=".NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.MyAppgen6to7MT.NoActionBar" />
+        <activity
             android:name=".activity.BottomNavActivity"
             android:exported="false" />
         <activity

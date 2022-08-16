@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.myappgen6to7mt.NavigationActivity;
 import com.myappgen6to7mt.utils.GifImageView;
 import com.myappgen6to7mt.R;
 
@@ -23,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this, TypeofMenuActivity.class);
+                Intent i = new Intent(SplashActivity.this, NavigationActivity.class);
                 startActivity(i);
                 finish();
             }
