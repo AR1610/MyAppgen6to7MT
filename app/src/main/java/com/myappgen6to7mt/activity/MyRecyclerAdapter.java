@@ -64,7 +64,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-
             imgData = itemView.findViewById(R.id.img_data);
             tvData = itemView.findViewById(R.id.tv_data);
         }

@@ -8,6 +8,7 @@
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/drawable/dp_bg.xml" value="0.2189873417721519" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/drawable/edt_bg.xml" value="0.2189873417721519" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/drawable/edt_bg_task.xml" value="0.2189873417721519" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/drawable/ic_email.xml" value="0.2205" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/drawable/ic_lock.xml" value="0.16085526315789472" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/drawable/ic_person.xml" value="0.20632911392405062" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/drawable/inner_bg.xml" value="0.2189873417721519" />
@@ -16,6 +17,7 @@
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_alert.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_bactivity.xml" value="0.1417763157894737" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_bottom_nav.xml" value="0.12442396313364056" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_const.xml" value="0.16052631578947368" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_custom_grid_view.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_custom_list_view.xml" value="0.1401315789473684" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_date_time.xml" value="0.1411184210526316" />
@@ -25,6 +27,9 @@
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_image_pick.xml" value="0.15789473684210525" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_linear.xml" value="0.16052631578947368" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_material.xml" value="0.16052631578947368" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_material_bottom.xml" value="0.16052631578947368" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_material_edit_text.xml" value="0.16052631578947368" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_navigation.xml" value="0.13980263157894737" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_recyclerview.xml" value="0.1506578947368421" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/layout/activity_relative_task.xml" value="0.197008547008547" />
@@ -58,6 +63,7 @@
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/menu/activity_navigation_drawer.xml" value="0.13980263157894737" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/menu/bottom_nav.xml" value="0.1" />
         <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/menu/item_menu.xml" value="0.15" />
+        <entry key="..\:/New Projects All/MyAppgen6to7MT/app/src/main/res/menu/navigation.xml" value="0.16052631578947368" />
       </map>
     </option>
   </component>
