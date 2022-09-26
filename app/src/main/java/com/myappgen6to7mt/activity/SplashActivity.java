@@ -9,6 +9,8 @@ import android.os.Handler;
 import com.myappgen6to7mt.MaterialBottomActivity;
 import com.myappgen6to7mt.MaterialEditTextActivity;
 import com.myappgen6to7mt.NavigationActivity;
+import com.myappgen6to7mt.NotificationActivity;
+import com.myappgen6to7mt.Service2Activity;
 import com.myappgen6to7mt.ServiceActivity;
 import com.myappgen6to7mt.utils.GifImageView;
 import com.myappgen6to7mt.R;
@@ -27,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this, ServiceActivity.class);
+                Intent i = new Intent(SplashActivity.this, NotificationActivity.class);
                 startActivity(i);
                 finish();
             }
