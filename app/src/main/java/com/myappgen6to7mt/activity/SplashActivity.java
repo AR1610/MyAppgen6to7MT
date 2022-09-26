@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.myappgen6to7mt.AlarmActivity;
 import com.myappgen6to7mt.MaterialBottomActivity;
 import com.myappgen6to7mt.MaterialEditTextActivity;
 import com.myappgen6to7mt.NavigationActivity;
@@ -29,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this, NotificationActivity.class);
+                Intent i = new Intent(SplashActivity.this, AlarmActivity.class);
                 startActivity(i);
                 finish();
             }

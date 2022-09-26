@@ -36,7 +36,8 @@ public class NotificationActivity extends AppCompatActivity {
 
                 Intent i = new Intent(NotificationActivity.this, CustomListViewActivity.class);
                 PendingIntent pendingIntent =
-                        PendingIntent.getActivity(NotificationActivity.this,1,i,PendingIntent.FLAG_ONE_SHOT);
+                        PendingIntent.getActivity(NotificationActivity.this,
+                                1,i,PendingIntent.FLAG_ONE_SHOT);
 
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(NotificationActivity.this);
                 builder.setSmallIcon(R.drawable.android);

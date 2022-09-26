@@ -14,6 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppgen6to7MT">
+        <receiver android:name=".BroadCast"/>
+        <activity
+            android:name=".AlarmActivity"
+            android:exported="false" />
         <activity
             android:name=".NotificationActivity"
             android:exported="false" />
